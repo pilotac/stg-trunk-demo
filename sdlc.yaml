@@ -43,4 +43,10 @@ stages:
     required_checks:
       - Deploy to Production
     promotion: manual
+    workflow_dispatch:
+      workflow: .github/workflows/deploy-prod.yml
+      ref: main
+      inputs:
+        release_version: "{{release_version}}"
+        candidate_sha: "{{candidate_sha}}"
     requires_evidence_approval: true
