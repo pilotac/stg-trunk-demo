@@ -62,5 +62,4 @@ jobs:
       # Replace with your real production deployment; this starter deliberately fails until configured.
       - name: Configure production deployment
         run: |
-          echo "Configure real production deployment commands before enabling this workflow." >&2
-          exit 1
+          echo "Deploying ${{ github.event.inputs.release_version }} at ${{ github.event.inputs.candidate_sha }} (demo: no real target)" 
