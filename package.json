@@ -1,0 +1,12 @@
+{
+  "name": "stg-trunk-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tiny demo app",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test",
+    "start": "node src/index.js"
+  },
+  "license": "MIT"
+}
